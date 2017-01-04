@@ -1,0 +1,326 @@
+﻿/*
+# Name		mstyle.css
+# Project	this is a part of mphoto theme
+# Copyright (c) 2015 cfdev
+# http://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+*/
+
+@font-face{
+  font-family: 'font-mphoto';
+  src: url('../fonts/BankGothicLtBT.ttf');
+}
+
+/* STYLE */
+a{
+	color: #000;
+}
+h1{
+	font-size:32px;
+	font-family: font-mphoto;
+}
+
+h2{
+	font-size:24px;
+	font-family: Verdana;
+}
+
+nav.navbar-inverse{
+	background: #7F7F7F;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #222/*rgba(222, 222, 222, 1)*/;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .active > a {
+    background-image: linear-gradient(to bottom, rgba(84, 84, 84, 1) 0px, rgba(114, 114, 114, 1) 100%);
+}
+
+.capcha-letter, .capcha-word {
+    font-weight: bold;
+	font-size: 110% !important;
+}
+
+.padding60Top{
+	padding-top: 60px;
+}
+
+body {
+  margin:0;
+  padding:0;
+  background: url('../img/lesbaux.jpg') no-repeat center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
+.ombreBox{
+	box-shadow: 1px 1px 12px #000;
+}
+.ombreBox:hover{
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	transform: rotateY(180deg);
+}
+
+.txt_white{
+	color:#fff;
+}
+
+.txt_sizem{
+	font-size:19px;
+}
+.txt_uppercase{
+  text-transform : uppercase;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+section{
+	background: rgba(255, 255, 255, 0.75);
+	padding: 1em;
+}
+html, body {
+    height: 100%;
+    margin: 0; padding: 0;
+}
+body {
+    display : table;
+    width: 100%;
+}
+footer {
+	/*background: #7F7F7F;*/
+    display : table-row;
+    height: 50px;
+	text-align:center;
+}
+footer[role=art_details]{
+	background: none;
+	margin-top: 1em;
+}
+footer[role=contentinfo] {
+	background: #7F7F7F;
+}
+.site-logo,
+.logo,
+.mainTitle{
+	vertical-align:middle;
+}
+.logo,
+.mainTitle{
+	display:inline;
+}
+.site-logo a:hover {
+	text-decoration:none;
+}
+
+.comment{
+	background-color: #fefefe;
+}
+.art_share{
+	background: #888;
+	color:#fff;
+	border-radius: 2px;
+	padding: 0.5em;
+}
+.lessbuttons_com_slider {
+	z-index: 0 !important;
+}
+
+textarea#message {
+    margin-bottom: 1em;
+}
+
+.badge {
+	float:right;
+}
+.tagList li,
+a.tag{
+    display: inline-block;
+    margin: 2px;
+    color: #000;
+    font-size: 1.05em;
+    background: none repeat scroll 0% 0% #7F7F7F;
+    border-radius: 2px;
+    padding: 0.3em;
+}
+a.tag{
+	background: #337ab7;
+	color: #fff;
+}
+/* ----------pagination -------- */
+.pagination{
+	text-align:center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background: rgba(255, 255, 255, 0.75);
+}
+.p_next a,
+.p_prev a,
+.p_first a,
+.p_last a{
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 6px;
+	color: #333;
+
+	text-shadow:0 1px 0 #fff;
+	background-image:-webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+	background-image:-o-linear-gradient(top,#fff 0,#e0e0e0 100%);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#e0e0e0));
+	background-image:linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	background-repeat:repeat-x;
+	border: 1px solid #ccc;
+}
+.p_next a:after{
+	content:" >";
+}
+.p_prev a:before{
+	content:"< ";
+}
+
+.p_next:hover a,.p_next:focus a,
+.p_prev:hover a,.p_prev:focus a,
+.p_first:hover a,.p_last:hover a{
+	text-decoration:none;
+	background-color:#e0e0e0;
+	background-position:0 -15px;
+}
+
+.p_next:active a,.p_next:active a,
+.p_prev:active a,.p_prev:active a,
+.p_first:active a,.p_last:active a{
+	text-decoration:none;
+	background-color:#e0e0e0;
+	border-color:#dbdbdb;
+}
+
+/* ----------figure -------- */
+.portfolio figure{
+	margin-top: 1em;
+}
+figcaption {
+	opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100%;
+	padding: 1em;
+	margin:0px;
+	color: #ccc;
+}
+figcaption:hover{
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+	opacity: 1.0;
+}
+figcaption a{
+	color: #fff;
+}
+
+.social{
+	padding-top:2em;
+	padding-bottom:2em;
+}
+.admin{
+	background-color: #333;
+	color: #bbb;
+	padding-top:2em;
+	padding-bottom:2em;
+}
+.admin a{
+	color: #fff;
+}
+.directory{
+	font-size:28px;
+	font-family: font-mphoto;
+	text-align:center;
+	margin: 2px;
+  color: #000;
+  background: none repeat scroll 0% 0% #7F7F7F;
+  border-radius: 2px;
+  padding: 0.15em;
+	color: #fff;
+}
+/* ------------ VIGNETTE ---------*/
+.vignette{
+	float:none !important;
+	margin-left:auto;
+	margin-right:auto;
+	width: 100% !important;
+}
+.vignette img{
+	float:none !important;
+	margin-left:auto;
+	margin-right:auto;
+}
+/* ----------- cfImgReader ---------*/
+.cfImgReader{
+	background-color: rgba(51, 122, 183, 0.85);
+	color: #fff;
+	padding-top:2em;
+	padding-bottom:2em;
+	border-radius: 2px;
+}
+/* ---------- GALLERY ---------- */
+.pic{
+	margin-bottom: 1em;
+	border:0px none transparent;
+	height: 175px;
+
+	transition:  0.5s;
+   -moz-transition:  0.5s;
+   -webkit-transition:  0.5s;
+}
+.pic:hover{
+	/*border: 1px solid #96D656;*/
+	transform: scale(1.15);
+}
+.pic a{
+	width: 199px;
+    height: 207px;
+	text-indent:-99999px;
+	display:block;}
+.pic a, .pic a:visited {outline:none;}
+
+ul.gal{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* ------------ CFDEV ------------*/
+.cfdev,
+.cfdev:hover {
+	text-decoration:none;
+	color: #D1A132;
+ }
+.cfdev:after {
+	content:url(../img/cfdev.png);
+ }
+
+/* ------------ Rotate EXIF ------------*/
+.space4{
+  margin-top: 4em;
+}
+.space6{
+  margin-top: 6em;
+}
+.flip{
+  -moz-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+  }
+.rotate-180{transform: rotate(180deg);}
+.rotate-90{display:block;transform: rotate(90deg);}
+.rotate-270{transform: rotate(270deg);}
